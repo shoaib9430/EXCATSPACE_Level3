@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Api</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <h1> {{ request.data }}</h1>
+
+
+    <h1>Enter Message Here</h1>
+    <form method="post" action="/shoaib">
+        <!-- <label for="cat_name">Enter a category name to disable:</label><br> -->
+        <input type="text" id="data" name="data">
+        <input class="submit" type="submit" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
